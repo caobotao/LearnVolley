@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LearnProgressBar</string>
+    <string name="add">增加</string>
+    <string name="reduce">减少</string>
+    <string name="reset">重置</string>
+    <string name="displayDialog">显示对话框</string>
+</resources>

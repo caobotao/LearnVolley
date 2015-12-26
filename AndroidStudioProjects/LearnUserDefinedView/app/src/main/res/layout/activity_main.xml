@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     使用自定义的控件的属性需要先添加命名空间
+     xmlns:cbt="http://schemas.android.com/apk/res-auto"
+     其中"cbt"可以任意指定,但是不能与系统的命名空间相同
+     在Android Studio中如上用res-auto,
+     在Eclipse需要在res后指定完整包名,如:
+     xmlns:cbt="http://schemas.android.com/apk/res/scratchcard.cbt.com.learnuserdefinedview.TopBar"
+ -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cbt="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="scratchcard.cbt.com.learnuserdefinedview.MainActivity">
+    <!-- 添加自定义控件及属性 -->
+    <scratchcard.cbt.com.learnuserdefinedview.TopBar
+        android:id="@+id/topbar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        cbt:leftText = "BACK"
+        cbt:leftBackground = "@android:color/holo_blue_bright"
+        cbt:leftTextColor = "#FFFFFF"
+
+        cbt:tbTitle = "自定义标题"
+        cbt:titleTextSize = "10sp"
+        cbt:titleTextColor = "#000000"
+
+        cbt:rightText = "MORE"
+        cbt:rightBackground = "@android:color/holo_blue_bright"
+        cbt:rightTextColor = "#FFFFFF"/>
+
+</LinearLayout>

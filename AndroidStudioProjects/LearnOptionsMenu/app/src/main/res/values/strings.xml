@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LearnOptionsMenu</string>
+    <string name="action_setting">setting</string>
+</resources>
